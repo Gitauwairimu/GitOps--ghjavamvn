@@ -13,7 +13,7 @@ spec:
         app: myapp
     spec:
       containers:
-      - name: myapp
-        image: nanajanashia/argocd-app:1.2
+      - name: gitops
+        image: gitauwairimu/javamvn:5148240302
         ports:
         - containerPort: 8080
