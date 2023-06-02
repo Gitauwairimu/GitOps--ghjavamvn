@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: gitops
-        image: gitauwairimu/javamvn:5148240302
+        image: gitauwairimu/javamvn:5155519756
         ports:
         - containerPort: 8080
