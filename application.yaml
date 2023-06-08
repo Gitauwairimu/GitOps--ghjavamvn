@@ -13,11 +13,17 @@ spec:
   destination: 
     server: https://kubernetes.default.svc
     namespace: myapp
+    
   syncPolicy:
     syncOptions:
     - CreateNamespace=true
     refresh:
       interval: 5m
+
+  overlays:
+  - dev
+  - staging
+  - prod
 
   # syncPolicy:
   #   syncOptions:
