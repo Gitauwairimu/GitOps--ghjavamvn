@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/Gitauwairimu/GitOps--ghjavamvn.git
     targetRevision: HEAD
-    path: overlays
+    # path: overlays
     path:
       - overlays/dev
       - overlays/staging
@@ -18,15 +18,15 @@ spec:
     server: https://kubernetes.default.svc
     namespace: myapp
 
-  syncPolicy:
-    syncOptions:
-    - CreateNamespace=true
-    refresh:
-      interval: 2m
-
   # syncPolicy:
   #   syncOptions:
   #   - CreateNamespace=true
+  #   refresh:
+  #     interval: 2m
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
 
     automated:
       selfHeal: true
