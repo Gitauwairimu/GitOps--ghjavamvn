@@ -18,7 +18,7 @@ spec:
     syncOptions:
     - CreateNamespace=true
     refresh:
-      interval: 5m
+      interval: 2m
 
   # syncPolicy:
   #   syncOptions:
