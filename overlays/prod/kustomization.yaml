@@ -1,0 +1,9 @@
+resources:
+  - ../../base
+namePrefix: prod-
+namespace: prod
+commonLabels:
+  env: prod
+
+patches: 
+  - path: replicaCount.yaml

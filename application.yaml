@@ -9,10 +9,10 @@ spec:
   source:
     repoURL: https://github.com/Gitauwairimu/GitOps--ghjavamvn.git
     targetRevision: HEAD
-    path: dev
+    path: overlays
   destination: 
     server: https://kubernetes.default.svc
-    namespace: myapp
+#    namespace: myapp
 
   syncPolicy:
     syncOptions:

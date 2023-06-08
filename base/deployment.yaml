@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: javamvn
+  name: javamvn
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: javamvn
+  template:
+    metadata:
+      labels:
+        app: javamvn
+    spec:
+      containers:
+      - image: gitauwairimu/javamvn:5148240302
+        name: javamvn
+        resources: {}
+status: {}

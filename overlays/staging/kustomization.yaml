@@ -1,0 +1,9 @@
+resources:
+  - ../../base
+namePrefix: staging-
+namespace: staging
+commonLabels:
+  env: staging
+
+patches: 
+  - path: replicaCount.yaml
