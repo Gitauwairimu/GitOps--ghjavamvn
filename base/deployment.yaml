@@ -17,5 +17,15 @@ spec:
       containers:
       - image: gitauwairimu/javamvn:5148240302
         name: javamvn
-        resources: {}
-status: {}
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 200m
+            memory: 256Mi
+
+status:
+  replicas: 2
+  readyReplicas: 2
+  availableReplicas: 2
